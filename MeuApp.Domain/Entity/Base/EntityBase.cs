@@ -10,10 +10,10 @@ namespace MeuApp.Domain.Entity.Base
     public class EntityBase
     {
         public int Id { get; set; }
-
         public int Situation { get; set; }
-
-
-
+        // DateTime? = pode ser null
+        public DateTime? MyProperty { get; set; }
+        public DateTime DateRegister { get; set; } = DateTime.Now;
+        public string Obersvation  { get; set; }
     }
 }
