@@ -4,30 +4,18 @@ namespace MeuApp.Domain.Entity
 {
     public class Cliente : EntityBase
     {
-        public string NomeCompleto { get; set; }
-        public int NumeroDaCasa { get; set; }
-        public int Idade { get; set; }
-        public string Casado { get; set; }
+        // NomeDoCliente
+        public string  NameClient { get; set; }
+        // Endereço
+        public string  Address { get; set; }
+        // Numero do endereço
+        public string  AddressNumber { get; set; }
+        // Cep 
+        public string  ZipCode { get; set; }
+        // Bairro
+        public string  neighborhood { get; set; }
 
-        public void MaiorDeIdade(int idade)
-        {
-            int valor = 18;
 
-            switch (idade)
-            {
-                case < 18:
-                    Console.WriteLine("Vereficado!");
-                    break;
 
-                default:
-                    Console.WriteLine("Idade minima não alcançada");
-                    break;
-            }
-        }
-
-        public override string ToString()
-        {
-            return Id + NomeCompleto + Idade + Casado + NumeroDaCasa;
-        }
     }
 }
