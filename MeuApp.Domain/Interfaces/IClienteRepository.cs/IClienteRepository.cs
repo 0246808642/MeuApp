@@ -4,7 +4,7 @@ using MeuApp.Domain.Interfaces.Base;
 
 namespace MeuApp.Domain.Interfaces.Base
 {
-    public interface ClienteRepository : RepositoryBase<Cliente>
+    public interface IClienteRepository : IRepositoryBase<Cliente>
     {
         IQueryable<Cliente> GetAllActive(Situations pSituations);
     }

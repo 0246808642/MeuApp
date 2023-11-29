@@ -2,7 +2,7 @@
 
 namespace MeuApp.Domain.Interfaces.Base
 {
-    public interface RepositoryBase<TEntity> where TEntity : class
+    public interface IRepositoryBase<TEntity> where TEntity : class
     {
         Task<TEntity> Add(TEntity entity);
         Task addRange(IList<TEntity> entity);
