@@ -2,7 +2,7 @@
 
 namespace MeuApp.Domain.Entity
 {
-    public class Cliente : EntityBase
+    public class Client : EntityBase
     {
          // <summary>
         // NomeDoCliente
