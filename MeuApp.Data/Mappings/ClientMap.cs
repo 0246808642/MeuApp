@@ -1,7 +1,10 @@
 ﻿using MeuApp.Domain.Entity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace MeuApp.Data.Mappings
 {
+
     public class ClientMap : IEntityTypeConfiguration<Client>
     {
         public void Configure(EntityTypeBuilder<Client> builder)
