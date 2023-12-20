@@ -7,7 +7,7 @@ namespace MeuApp.Domain.Entity
          // <summary>
         // NomeDoCliente
         // </summary>
-        public string  NameClient { get; set; } 
+        public string  Name { get; set; } 
 
         // <summary>
         // Endereço
