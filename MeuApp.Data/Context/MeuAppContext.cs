@@ -7,7 +7,10 @@ namespace MeuApp.Data.Context
     
     public class MeuAppDbContext: DbContext
     {
+        public MeuAppDbContext()
+        {
 
+        }
         public MeuAppDbContext(DbContextOptions<MeuAppDbContext> opcoes) : base(opcoes) { }
 
         DbSet<Client> Clients { get; set; }
